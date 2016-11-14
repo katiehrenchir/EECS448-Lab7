@@ -8,7 +8,7 @@ public class NumInputVerifier extends InputVerifier {
     public boolean verify(JComponent input) {
        String text = ((JTextField) input).getText();
        try {
-          Integer.parseInt(text);
+          Double.parseDouble(text);
        } catch (NumberFormatException e) {
     	   System.out.println("NOT A NUMBER");
           return false;
